@@ -22,7 +22,7 @@ container.append(title, wrapBtn, display);
 const root = document.querySelector("#root");
 root.append(container);
 
-let count = localStorage.getItem("count") ?? 90;
+let count = localStorage.getItem("count") ?? 0;
 console.log(String(count).length);
 if (String(count).length === 1) {
   display.textContent = `0${count}`;
