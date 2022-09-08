@@ -45,10 +45,10 @@ startBtn.addEventListener("click", () => {
     }
     saveCount(count);
   }, 1000);
-  startBtn.style.pointerEvents = 'none';
+  startBtn.disabled = true;
 });
 
 stopBtn.addEventListener("click", () => {
   clearInterval(timer);
-  startBtn.style.pointerEvents = 'auto';
+  startBtn.disabled = false;
 });
